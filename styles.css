@@ -100,47 +100,93 @@ section {
 }
 
 .hero {
-    background: linear-gradient(45deg, #1c1c1c, #252525);
+    background: rgba(37, 37, 37, 0.7);
+    position: relative;
+    overflow: hidden;
+    padding: 120px 20px;
     text-align: center;
-    padding-top: 8rem;
 }
 
-h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 4rem;
-    color: #fff;
-    margin-bottom: 1.5rem;
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(255, 95, 31, 0.03) 0px,
+        rgba(255, 95, 31, 0.03) 2px,
+        transparent 2px,
+        transparent 12px
+    );
+    animation: moveBackground 20s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100px 100px;
+    }
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.header-2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #FF5F1F;
 }
 
 .subtitle {
-    font-size: 1.5rem;
-    color: #888;
-    margin-bottom: 2rem;
-    max-width: 800px;
-    margin: 0 auto 2rem;
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.8;
 }
 
 .cta-button {
-    padding: 1rem 2.5rem;
-    font-size: 1.1rem;
+    background: rgba(255, 95, 31, 0.1);
+    color: #FF5F1F;
+    padding: 15px 30px;
+    border: 1px solid rgba(255, 95, 31, 0.3);
     border-radius: 12px;
-    border: 1px solid rgba(255, 107, 53, 0.2);
-    background: rgba(255, 255, 255, 0.03);
-    color: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(10px);
+    cursor: not-allowed;
     transition: all 0.3s ease;
-    cursor: pointer;
+    font-size: 1.1rem;
+    backdrop-filter: blur(5px);
 }
 
 .cta-button:hover {
-    transform: translateY(-2px);
-    border-color: rgba(255, 107, 53, 0.3);
+    background: rgba(255, 95, 31, 0.15);
+    border-color: rgba(255, 95, 31, 0.5);
 }
 
 .cta-button.disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-    pointer-events: none;
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 20px;
+    }
+    
+    .header-2 {
+        font-size: 2.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1.2rem;
+    }
 }
 
 .research-grid {
@@ -367,5 +413,38 @@ footer {
     .section-title {
         font-size: 2.5rem;
     }
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4; 
+}
+
+nav {
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.hero, 
+#research, 
+#contact,
+footer {
+    position: relative;
+    z-index: 1;
 }
   

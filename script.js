@@ -1,88 +1,65 @@
 window.onload = function() {
     consoleText([
         {
-            text: 'Piercing the veil of Web3 Research.',
-            colorWords: [{ word: 'veil', color: '#FF5F1F', startIndex: 13 }]
+            text: 'Piercing the Veil of Web3 Research.',
+            colorWords: [{ word: 'Veil', color: '#FF5F1F', startIndex: 13 }]
         },
-        {
-            text: 'Exploring Blockchain Innovation.',
-            colorWords: [{ word: 'Innovation', color: '#ff8f6b', startIndex: 20 }]
-        },
-        {
-            text: 'Building the Future of Web3.',
-            colorWords: [{ word: 'Future', color: '#FF5F1F', startIndex: 13 }]
-        },
+
         {
             text: 'Unlocking Digital Sovereignty.',
-            colorWords: [{ word: 'Sovereignty', color: '#ff8f6b', startIndex: 16 }]
+            colorWords: [{ word: 'Sovereignty', color: '#FF5F1F', startIndex: 18 }]
         },
         {
-            text: 'Advancing the Frontier of DeFi.',
-            colorWords: [{ word: 'Frontier', color: '#FF5F1F', startIndex: 14 }]
+            text: 'Advancing the Frontiers of DeFi.',
+            colorWords: [{ word: 'Frontiers', color: '#ff8f6b', startIndex: 14 }]
         },
         {
-            text: 'Shaping the Protocol of tomorrow.',
-            colorWords: [{ word: 'Protocol', color: '#ff8f6b', startIndex: 11 }]
+            text: 'Shaping the Protocol of Tomorrow.',
+            colorWords: [{ word: 'Protocol', color: '#FF5F1F', startIndex: 11 }]
         },
         {
             text: 'Empowering the Vision of Web3.',
-            colorWords: [{ word: 'Vision', color: '#FF5F1F', startIndex: 15 }]
+            colorWords: [{ word: 'Vision', color: '#ff8f6b', startIndex: 15 }]
         },
         {
-            text: 'Crafting the Future of Finance.',
-            colorWords: [{ word: 'Future', color: '#ff8f6b', startIndex: 13 }]
+            text: 'Crafting Digital Innovation.',
+            colorWords: [{ word: 'Innovation', color: '#FF5F1F', startIndex: 15 }]
         },
         {
             text: 'Pioneering Blockchain Evolution.',
-            colorWords: [{ word: 'Evolution', color: '#FF5F1F', startIndex: 20 }]
+            colorWords: [{ word: 'Evolution', color: '#ff8f6b', startIndex: 20 }]
         },
         {
             text: 'Redefining Digital Ownership.',
-            colorWords: [{ word: 'Ownership', color: '#ff8f6b', startIndex: 17 }]
+            colorWords: [{ word: 'Ownership', color: '#FF5F1F', startIndex: 17 }]
         },
         {
-            text: 'Accelerating Web3 Innovation.',
-            colorWords: [{ word: 'Innovation', color: '#FF5F1F', startIndex: 18 }]
+            text: 'Accelerating Web3 Progress.',
+            colorWords: [{ word: 'Progress', color: '#ff8f6b', startIndex: 18 }]
+        },
+        {
+            text: 'Building the Future of Web3.',
+            colorWords: [{ word: 'Future', color: '#ff8f6b', startIndex: 13 }]
         },
         {
             text: 'Transforming the Paradigm of DeFi.',
-            colorWords: [{ word: 'Paradigm', color: '#ff8f6b', startIndex: 16 }]
+            colorWords: [{ word: 'Paradigm', color: '#FF5F1F', startIndex: 16 }]
         },
         {
             text: 'Engineering the Future of Value.',
-            colorWords: [{ word: 'Value', color: '#FF5F1F', startIndex: 23 }]
+            colorWords: [{ word: 'Value', color: '#ff8f6b', startIndex: 23 }]
         },
         {
-            text: 'Revolutionizing Digital Trust.',
-            colorWords: [{ word: 'Trust', color: '#ff8f6b', startIndex: 22 }]
+            text: 'Revolutionizing Digital Nativeness.',
+            colorWords: [{ word: 'Trust', color: '#FF5F1F', startIndex: 22 }]
         },
         {
             text: 'Expanding the Horizon of Web3.',
-            colorWords: [{ word: 'Horizon', color: '#FF5F1F', startIndex: 14 }]
+            colorWords: [{ word: 'Horizon', color: '#ff8f6b', startIndex: 14 }]
         },
         {
-            text: 'Mastering Chain Intelligence.',
-            colorWords: [{ word: 'Intelligence', color: '#ff8f6b', startIndex: 14 }]
-        },
-        {
-            text: 'Defining the Edge of Innovation.',
-            colorWords: [{ word: 'Edge', color: '#FF5F1F', startIndex: 13 }]
-        },
-        {
-            text: 'Advancing Blockchain Synergy.',
-            colorWords: [{ word: 'Synergy', color: '#ff8f6b', startIndex: 20 }]
-        },
-        {
-            text: 'Creating the Path to Freedom.',
-            colorWords: [{ word: 'Freedom', color: '#FF5F1F', startIndex: 19 }]
-        },
-        {
-            text: 'Discovering Digital Frontiers.',
-            colorWords: [{ word: 'Frontiers', color: '#ff8f6b', startIndex: 17 }]
-        },
-        {
-            text: 'Leading the Wave of Change.',
-            colorWords: [{ word: 'Wave', color: '#FF5F1F', startIndex: 11 }]
+            text: 'Mastering On-Chain Intelligence.',
+            colorWords: [{ word: 'Intelligence', color: '#FF5F1F', startIndex: 14 }]
         }
     ], 'text');
 }

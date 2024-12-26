@@ -10,70 +10,82 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <div class="logo header-1">Nibelung R&D</div>
-        <div class="nav-links">
-            <a href="#research" class="nav-link disabled">Research</a>
-            <a href="#team" class="nav-link disabled">Team</a>
-            <a href="#contact" class="nav-link">Contact</a>
+    <main>
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source src="static/output.webm" type="video/webm">
+            </video>
         </div>
-    </nav>
 
-    <section class="hero">
-        <div>
-            <h1 class="header-2">
-                <div class='console-container'>
-                    <span id='text'></span><div class='console-underscore' id='console'>&#95;</div>
-                </div>
-            </h1>
-            <p class="subtitle">Exploring the frontiers of decentralized systems through innovative research and development</p>
-            <button class="cta-button disabled">More Soon...</button>
-        </div>
-    </section>
+        <nav>
+            <div class="logo header-1">Nibelung R&D</div>
+            <div class="nav-links">
+                <a href="#research" class="nav-link disabled">Research</a>
+                <a href="#team" class="nav-link disabled">Team</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </nav>
 
-    <section id="research">
-        <div class="research-grid">
-            <div class="research-card">
-                <div class="card-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        <path d="M9 12l2 2 4-4"/>
-                    </svg>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="header-2">
+                    <div class='console-container'>
+                        <span id='text'></span><div class='console-underscore' id='console'>&#95;</div>
+                    </div>
+                </h1>
+                <p class="subtitle">Exploring the frontiers of decentralized systems through innovative research and development</p>
+                <button class="cta-button disabled">More Soon...</button>
+            </div>
+        </section>
+
+        <section id="research">
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Emergent Solutions</h3>
+                    <p class="card-description">Expanding the frontiers of the Web3 ecosystem.</p>
+                    <div class="card-footer">
+                        <span class="status">Coming Soon</span>
+                    </div>
                 </div>
-                <h3 class="card-title">Emergent Solutions</h3>
-                <p class="card-description">Expanding the frontiers of the Web3 ecosystem.</p>
-                <div class="card-footer">
-                    <span class="status">Coming Soon</span>
+
+                <div class="research-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Zero Latency Scanners</h3>
+                    <p class="card-description">Building intelligent products that help you keep the edge on your trading counterparties.</p>
+                    <div class="card-footer">
+                        <span class="status">In Development</span>
+                    </div>
+                </div>
+
+                <div class="research-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 16l-4-4m0 0l4-4m-4 4h18"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Blockchain Analysis</h3>
+                    <p class="card-description">Cutting edge tools to help you decipher what's happening on the blockchain, in real time.</p>
+                    <div class="card-footer">
+                        <span class="status">In Development</span>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="research-card">
-                <div class="card-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                    </svg>
-                </div>
-                <h3 class="card-title">Zero Latency Scanners</h3>
-                <p class="card-description">Building intelligent products that help you keep the edge on your trading counterparties.</p>
-                <div class="card-footer">
-                    <span class="status">In Development</span>
-                </div>
-            </div>
-
-            <div class="research-card">
-                <div class="card-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M7 16l-4-4m0 0l4-4m-4 4h18"/>
-                    </svg>
-                </div>
-                <h3 class="card-title">Blockchain Analysis</h3>
-                <p class="card-description">Cutting edge tools to help you decipher what's happening on the blockchain, in real time.</p>
-                <div class="card-footer">
-                    <span class="status">In Development</span>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section id="contact">
+            <!-- contact content -->
+        </section>
+    </main>
 
     <footer>
         <p>© 2024 Nibelung R&D.</p>
