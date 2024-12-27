@@ -11,7 +11,7 @@ window.onload = function() {
         },
         {
             text: 'Advancing the Frontiers of DeFi.',
-            colorWords: [{ word: 'Frontiers', color: '#ff8f6b', startIndex: 14 }]
+            colorWords: [{ word: 'Frontiers', color: '#ff8f6b', startIndex: 13 }]
         },
         {
             text: 'Shaping the Protocol of Tomorrow.',
@@ -31,7 +31,7 @@ window.onload = function() {
         },
         {
             text: 'Redefining Digital Ownership.',
-            colorWords: [{ word: 'Ownership', color: '#FF5F1F', startIndex: 17 }]
+            colorWords: [{ word: 'Ownership', color: '#FF5F1F', startIndex: 18 }]
         },
         {
             text: 'Accelerating Web3 Progress.',

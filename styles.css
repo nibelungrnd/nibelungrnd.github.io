@@ -100,11 +100,12 @@ section {
 }
 
 .hero {
-    background: rgba(37, 37, 37, 0.7);
     position: relative;
-    overflow: hidden;
-    padding: 120px 20px;
+    z-index: 1;
+    padding: 2rem;
     text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
 }
 
 .hero::before {
@@ -213,6 +214,7 @@ section {
 }
 
 .research-card:hover {
+    cursor: pointer;
     transform: translateY(-5px);
     border-color: rgba(255, 107, 53, 0.2);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
@@ -446,5 +448,11 @@ nav {
 footer {
     position: relative;
     z-index: 1;
+}
+
+.card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
   

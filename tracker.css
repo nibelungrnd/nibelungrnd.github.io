@@ -1,0 +1,135 @@
+.tracker-section {
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description-box {
+    max-width: 1200px;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.tracker-container {
+    max-width: 1200px; /* Ensure both boxes have the same width */
+    margin: 1rem auto; /* Reduced margin to decrease space between boxes */
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.03); /* Match the card background */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Add border */
+    border-radius: 16px; /* Match card border radius */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(10px); /* Add backdrop blur for consistency */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+input#contractAddress {
+    width: 70%;
+    padding: 0.8rem;
+    margin-right: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: white;
+}
+
+button {
+    padding: 0.5rem 1.5rem;
+    background: #333;
+    border: none;
+    border-radius: 20px;
+    color: #FF5F1F;
+    font-size: 0.9rem;
+    text-transform: lowercase;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background: #444;
+    transform: scale(1.05);
+}
+
+.token-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.token-widget {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    position: relative;
+}
+
+.token-name {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.token-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.remove-widget {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.remove-widget:hover {
+    opacity: 1;
+}
+
+.no-tokens-message {
+    margin-top: 1rem;
+    color: #ff5f1f;
+    text-align: center;
+}
+
+.title-orange {
+    color: #FF5F1F;
+    text-align: left;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.price-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 0.5rem 2rem;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+}
+
+.sol-price {
+    color: white;
+    text-align: right;
+}
+
+.sol-price span:first-child {
+    color: #FF5F1F;
+    margin-right: 0.5rem;
+} 

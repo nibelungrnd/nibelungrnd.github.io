@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nibelung - Token Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tracker.css">
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+            <source src="static/output.webm" type="video/webm">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <main>
+        <section class="tracker-section">
+            <div class="description-box">
+                <h1 class="header-2 title-orange">Solana Token Tracker</h1>
+                <p>Track the prices of your favorite Solana SPL tokens in real-time. Enter the contract address of the token you want to monitor, and click "Get Price" to see the latest updates.</p>
+            </div>
+            <div class="tracker-container">
+                <input type="text" id="contractAddress" placeholder="Enter Contract Address">
+                <button onclick="getTokenPrice()">Get Price</button>
+                <div id="tokenInfo" class="token-grid">
+                    <!-- Tokens will be displayed here -->
+                </div>
+                <div id="noTokensMessage" class="no-tokens-message" style="display: none;">
+                    <p>No tokens being tracked. Please enter a contract address.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="price-footer">
+        <div class="sol-price">
+            <span>SOL:</span>
+            <span id="solPrice">Loading...</span>
+        </div>
+    </footer>
+    <script src="js/nav-loader.js"></script>
+    <script src="js/tracker.js"></script>
+    <script src="js/sol-price.js"></script>
+</body>
+</html> 

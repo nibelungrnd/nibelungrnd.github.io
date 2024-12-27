@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&family=Amethysta&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <main>
@@ -17,14 +18,7 @@
             </video>
         </div>
 
-        <nav>
-            <div class="logo header-1">Nibelung R&D</div>
-            <div class="nav-links">
-                <a href="#research" class="nav-link disabled">Research</a>
-                <a href="#team" class="nav-link disabled">Team</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-        </nav>
+
 
         <section class="hero">
             <div class="hero-content">
@@ -79,6 +73,22 @@
                         <span class="status">In Development</span>
                     </div>
                 </div>
+
+                <div class="research-card">
+                    <a href="tracker.html" class="card-link">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#FF5F1F" stroke-width="2" width="48" height="48">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3C6.48 3 2 12 2 12s4.48 9 10 9 10-9 10-9-4.48-9-10-9z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9c-1.5 0-2.5 1-2.5 2s1 2 2.5 2 2.5-1 2.5-2-1-2-2.5-2z" />
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Token Tracker</h3>
+                        <p class="card-description">Track Solana SPL tokens in real-time.</p>
+                        <div class="card-footer">
+                            <span class="status">Live</span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -90,7 +100,15 @@
     <footer>
         <p>© 2024 Nibelung R&D.</p>
     </footer>
-
+    <script src="js/nav-loader.js"></script>
     <script src="script.js"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY;
+            const maxScroll = 500; // Adjust this value to control when the fade effect starts
+            const opacity = Math.max(0, 0.2 - scrollPosition / maxScroll); // Calculate opacity based on scroll position
+            document.querySelector('.hero').style.backgroundColor = `rgba(0, 0, 0, ${opacity})`; // Update hero background color
+        });
+    </script>
 </body>
 </html>
