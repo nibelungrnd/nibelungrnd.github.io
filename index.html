@@ -32,30 +32,64 @@
             </div>
         </section>
 
+
+        <section id="about-us" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Us</h2>
+                <div class="about-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                    <p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    </p>
+                </div>
+            </div>
+        </section>
+
         <section id="research">
+            
             <div class="research-grid">
-                <div class="research-card">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            <path d="M9 12l2 2 4-4"/>
-                        </svg>
-                    </div>
-                    <h3 class="card-title">Emergent Solutions</h3>
-                    <p class="card-description">Expanding the frontiers of the Web3 ecosystem.</p>
-                    <div class="card-footer">
-                        <span class="status">Coming Soon</span>
-                    </div>
+                <div class="research-card project-card">
+                    <a href="https://kfc-on-sol.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <div class="project-image">
+                            <img src="assets/kfc-website.png" alt="$KFC Website" class="project-thumbnail">
+                        </div>
+                        <h3 class="card-title">$KFC Website</h3>
+                        <p class="card-description">Custom website developed for a cryptocurrency project based in Japan, featuring modern design and seamless user experience.</p>
+                        <div class="card-footer">
+                            <span class="status completed">Completed</span>
+                        </div>
+                    </a>
                 </div>
 
-                <div class="research-card">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                        </svg>
+                <div class="research-card project-card">
+                    <div class="project-image">
+                        <img src="assets/solmad01.png" alt="Sol Madness - Default View" class="project-thumbnail primary-image">
+                        <img src="assets/solmad02.png" alt="Sol Madness - Hover View" class="project-thumbnail secondary-image">
                     </div>
-                    <h3 class="card-title">Zero Latency Scanners</h3>
-                    <p class="card-description">Building intelligent products that help you keep the edge on your trading counterparties.</p>
+                    <h3 class="card-title">Sol Madness</h3>
+                    <p class="card-description">NCAA March Madness Bracket prediction game built for Solana users, allowing users to create and compete with their tournament predictions.</p>
+                    <div class="card-footer">
+                        <span class="status completed">Completed</span>
+                    </div>
+                </div>
+                <div class="research-card project-card">
+                    <div class="project-image">
+                        <img src="assets/socialtracker01.png" alt="Nibelung Social Tools - Default View" class="project-thumbnail">
+                    </div>
+                    <h3 class="card-title">Nibelung Social Tools</h3>
+                    <p class="card-description">Suite of X Tools tracking followers, mentions, and more.</p>
+                    <div class="card-footer">
+                        <span class="status">In Development</span>
+                    </div>
+                </div>
+                <div class="research-card project-card">
+                    <div class="project-image">
+                        <img src="assets/CAlookup01.png" alt="Contract Address Lookup" class="project-thumbnail">
+                    </div>
+                    <h3 class="card-title">SOL Contract Address Lookup</h3>
+                    <p class="card-description">Lookup the contract address for any SOL token.</p>
                     <div class="card-footer">
                         <span class="status">In Development</span>
                     </div>
@@ -87,16 +121,45 @@
                         <span class="status">Coming Soon</span>
                     </div>
                 </div>
+
+
             </div>
         </section>
 
         <section id="contact">
             <!-- contact content -->
+            <div class="contact-section">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="contact-container">
+                    <form class="contact-form disabled-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your email address" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Subject" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your message" disabled></textarea>
+                        </div>
+                        <button type="submit" class="submit-button" disabled>Send Message</button>
+                    </form>
+                    <div class="form-notice">
+                        <p>Our contact form is currently disabled. Please check back soon!</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2024 Nibelung R&D.</p>
+        <p>© 2025 Nibelung R&D.</p>
     </footer>
     <script src="js/nav-loader.js"></script>
     <script src="script.js"></script>

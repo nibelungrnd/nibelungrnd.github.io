@@ -11,11 +11,11 @@ window.onload = function() {
         },
         {
             text: 'Advancing the Frontiers of DeFi.',
-            colorWords: [{ word: 'Frontiers', color: '#ff8f6b', startIndex: 13 }]
+            colorWords: [{ word: 'Frontiers', color: '#ff8f6b', startIndex: 14   }]
         },
         {
             text: 'Shaping the Protocol of Tomorrow.',
-            colorWords: [{ word: 'Protocol', color: '#FF5F1F', startIndex: 11 }]
+            colorWords: [{ word: 'Protocol', color: '#FF5F1F', startIndex: 12 }]
         },
         {
             text: 'Empowering the Vision of Web3.',
